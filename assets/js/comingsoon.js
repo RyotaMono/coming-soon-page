@@ -2,7 +2,7 @@ const countdown = () => {
     const countDate = new Date("Sep 12, 2024 00:00:00").getTime();
 
     const currentTime = new Date().getTime();
-    console.log(currentTime);
+    // console.log(currentTime);
     const gap = countDate - currentTime;
 
     const millisecond = 1;
@@ -17,8 +17,8 @@ const countdown = () => {
     const textSecond = Math.floor((gap % minutes) / second);
     const textMillisecond = Math.floor((gap % second) / millisecond);
 
-    console.log(textHour)
-    console.log(textMillisecond)
+    // console.log(textHour)
+    // console.log(textMillisecond)
     document.querySelector('.day').innerText = textDay;
     document.querySelector('.hour').innerText = textHour;
     document.querySelector('.minutes').innerText = textMinutes;
